@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    width: 400px;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #222;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+#result {
+    margin-top: 25px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.age-box {
+    width: 100px;
+    padding: 15px 5px;
+
+    background: #f0f4f8;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age-box span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.age-box small {
+    margin-top: 5px;
+    color: #666;
+}
+button + button {
+    margin-top: 10px;
+    background: #777;
+}
+@media (max-width: 500px) {
+
+    .container {
+        width: 90%;
+        padding: 25px;
+        .container {
+    position: relative;
+
+    background: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .age-box {
+        width: 30%;
+    }
+
+    .age-box span {
+        font-size: 24px;
+    }
+
+    .age-box small {
+        font-size: 12px;
+    }
+}
+#birthday {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#total {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+#birthday,
+#total,
+#totalMonths,
+#totalWeeks {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+#birthday,
+#total,
+#totalMonths,
+#totalWeeks {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+#birthday {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#total,
+#totalMonths,
+#totalWeeks {
+    margin-top: 8px;
+    font-size: 14px;
+}
+#darkModeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    margin: 0;
+
+    border-radius: 50%;
+
+    background: #333;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#darkModeBtn:hover {
+    background: #555;
+}
+.dark-mode {
+    background: #121212;
+}
+
+.dark-mode .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode p {
+    color: #bbb;
+}
+
+.dark-mode .age-box {
+    background: #2a2a2a;
+}
+
+.dark-mode .age-box small {
+    color: #bbb;
+}
+
+.dark-mode #birthday,
+.dark-mode #total,
+.dark-mode #totalMonths,
+.dark-mode #totalWeeks {
+    background: #2a2a2a;
+    color: white;
+}
+/* Button Animation */
+
+button {
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+input:focus {
+    outline: none;
+    border: 2px solid #555;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+.age-box {
+    transition: 0.3s ease;
+}
+
+.age-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.age-box span {
+    transition: 0.3s ease;
+}
+
+.age-box:hover span {
+    transform: scale(1.1);
+}
