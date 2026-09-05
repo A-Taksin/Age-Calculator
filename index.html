@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Age Calculator</title>
+<meta name="description" content="Free online Age Calculator. Calculate your exact age in years, months and days, next birthday, total days, weeks and months lived.">
+
+<meta name="keywords" content="age calculator, calculate age, birthday calculator, exact age calculator">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2370/2370264.png">
+</head>
+
+<body>
+
+   <body>
+
+    <div class="container">
+
+        <h1>Age Calculator</h1>
+
+<button onclick="toggleDarkMode()" id="darkModeBtn">🌙</button>    
+
+<p>Enter your date of birth</p>
+
+        <input type="date" id="birthDate">
+
+        <button onclick="calculateAge()">Calculate Age</button>
+<button onclick="resetCalculator()">Reset</button>
+        <div id="result" class="result">
+
+    <div class="age-box">
+        <span id="years">0</span>
+        <small>Years</small>
+    </div>
+
+    <div class="age-box">
+        <span id="months">0</span>
+        <small>Months</small>
+    </div>
+
+    <div class="age-box">
+        <span id="days">0</span>
+        <small>Days</small>
+    </div>
+
+</div>
+<div id="birthday">
+    🎂 Your next birthday will appear here.
+</div>
+    </div>
+<div id="total">
+    Total days: 0
+</div>
+    <div id="totalMonths">
+    Total months: 0
+</div>
+
+<div id="totalWeeks">
+    Total weeks: 0
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</body>
+</html>
